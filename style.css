@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 10s;
+}
+body {
+  background-color: red;
+}
+
+body:hover {
+  background-color: black;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+  background-color: #1275b9;
+  background-image: url(images/tablet_white.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.icon:hover {
+  background-image: url(images/tablet.png);
+  background-color: #ffffff;
+  border: 1px solid #1275b9;
+}
