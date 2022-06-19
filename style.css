@@ -1,27 +1,63 @@
 * {
+  transition: all 0.1s ease-in;
   box-sizing: border-box;
-  transition: all ease-in-out 10s;
 }
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-width: 1000px;
+  font-size: 14px;
 }
-
-body:hover {
-  background-color: black;
+.itemWr {
+  display: inline-block;
+  width: 300px;
+  margin: 35px 30px 15px;
+  padding: 15px 15px;
 }
-.icon {
+.itemWr h2 {
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  line-height: 24px;
+}
+.itemWr p {
+  margin-top: 22px;
+  color: #9d9d9d;
+  line-height: 20px;
+}
+.itemWr .tablet {
+  background: url(img/tablet.png);
+}
+.itemWr .configuration {
+  background: url(img/cog.png);
+}
+.itemWr .dashboard {
+  background: url(img/dashboard.png);
+}
+.itemWr .itemImg {
   width: 64px;
   height: 64px;
-  background-color: #1275b9;
-  background-image: url(images/tablet_white.png);
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 50%;
-  border: 1px solid transparent;
+  background-color: #1275b9;
 }
-
-.icon:hover {
-  background-image: url(images/tablet.png);
-  background-color: #ffffff;
-  border: 1px solid #1275b9;
+.itemWr:hover .tablet {
+  background: url(img/tablet-1.png);
+}
+.itemWr:hover .configuration {
+  background: url(img/cog-1.png);
+}
+.itemWr:hover .dashboard {
+  background: url(img/dashboard-1.png);
+}
+.itemWr:hover .itemImg {
+  border-color: #1275b9;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
